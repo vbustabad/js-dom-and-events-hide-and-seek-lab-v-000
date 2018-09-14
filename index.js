@@ -6,10 +6,14 @@ function nestedTarget() {
   return document.getElementById("nested").querySelector(".target");
 }
 
-function increaseRankBy(n) {
-  const lis = document.getElementByClassName('ranked-list').querySelectorAll('li');
+// function increaseRankBy(n) {
+//   const lis = document.getElementByClassName('ranked-list').querySelectorAll('li');
+//
+//   for (let n = 0; n < lis.length; n++) {
+//     lis[n].innerHTML = (n + 1).toString()
+//   };
+// }
 
-  for (let n = 0; n < lis.length; n++) {
-    lis[n].innerHTML = (n + 1).toString()
-  };
+function deepestChild() {
+  return document.querySelector("#grand-node div div div div");
 }
